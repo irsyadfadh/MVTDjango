@@ -1,16 +1,40 @@
-<h1>Data pribadi Mahasiswa</h1>
+{% extends 'base.html' %}
 
-<h3>Deskripsi<h3>
-<p>{{ deskripsi }}<p>
+{% block content %}
+    <h1>Data Pribadi</h1>
 
+    <h5>Name:</h5>
+    <p>{{name}}</p>
 
-<h5>Name: </h5>
-<p>{{ name }}<p>
-<h5>Class: </h5>
-<p>{{ class }}<p>
-<h5>NPM: </h5>
-<p>{{ npm }}<p>    
-<h5>Jurusan: </h5>
-<p>{{ jurusan }}<p>
-<h5>Angkatan: </h5>
-<p>{{ angkatan }}<p>
+    <h5>Class:</h5>
+    <p>{{class}}</p>
+    
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Angkatan</th>
+            <th>Jurusan</th>
+            <th>Date Added</th>
+        </tr>
+    
+        {% comment %} Berikut cara memperlihatkan data produk di bawah baris ini {% endcomment %}
+    
+        {% for item in items %}
+            <tr>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.date_added}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+    <br />
+    
+    <a href="{% url 'main:create_product' %}">
+        <button>
+            Add New Product
+        </button>
+    </a>
+    
+    {% endblock content %}

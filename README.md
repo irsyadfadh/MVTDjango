@@ -1,3 +1,4 @@
+Tugas 2
 Jelaskan mengapa kita menggunakan virtual environment? Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment?
 Kita menggunakan virtual environment (venv atau virtualenv) dalam pengembangan perangkat lunak, termasuk aplikasi web berbasis Django, dengan beberapa alasan utama: 
 
@@ -31,3 +32,54 @@ Langkah 6: Membuat Template HTML Di dalam direktori aplikasi "main", buat sebuah
 Langkah 7: Membuat Routing pada urls.py Aplikasi "main" Di dalam direktori aplikasi "main", buka file urls.py dan buat routing untuk fungsi yang telah Anda buat di views.py: python Copy code from django.urls import path from . import views urlpatterns = [ path('', views.home, name='home'), ] 
 Langkah 8: Deployment ke Adaptable Untuk melakukan deployment ke Adaptable (atau platform hosting lainnya), Anda perlu mengikuti panduan atau dokumentasi dari platform tersebut karena setiap platform memiliki proses deployment yang berbeda. Biasanya, Anda perlu mengatur server, database, dan mengunggah kode proyek Anda ke server. 
 Langkah 9: Membuat README.md Buatlah berkas README.md yang berisi informasi tentang tautan ke aplikasi Adaptable yang sudah di-deploy dan jawaban atas beberapa pertanyaan yang diberikan dalam checklist tugas Anda. Jangan lupa untuk menjalankan migrasi database menggunakan python manage.py makemigrations dan python manage.py migrate setelah membuat model "Item". Semua langkah-langkah di atas harus dijalankan secara berurutan untuk membuat dan mengimplementasikan proyek Django Anda sesuai dengan checklist tugas yang Anda sebutkan. Pastikan Anda telah mengonfigurasi database, setting proyek, dan hal-hal lain yang mungkin diperlukan sesuai dengan kebutuhan proyek Anda.
+
+Tugas 3 PBP
+1. Dalam Django, seperti dalam banyak kerangka kerja web lainnya, Anda dapat menggunakan metode HTTP POST dan GET untuk mengirim data dari formulir HTML ke server. Berikut adalah perbedaan utama antara keduanya: 
+- Metode Pengiriman Data: Dalam form POST, data yang dikirimkan ke server dimasukkan dalam tubuh permintaan HTTP. Oleh karena itu, data tersebut tidak terlihat dalam URL dan dianggap lebih aman untuk mengirim data sensitif seperti kata sandi. Dalam form GET, data yang dikirimkan ke server dimasukkan dalam URL sebagai parameter query string. Ini membuat data dapat dilihat dalam URL, dan metode GET lebih baik digunakan untuk permintaan yang bersifat idempoten, seperti pencarian atau penampilan halaman. 
+Batasan Ukuran Data: Tidak ada batasan ukuran data yang ketat dalam form POST, sehingga Anda dapat mengirimkan volume data yang lebih besar melalui metode ini. Terdapat batasan ukuran URL yang lebih ketat dalam form GET. Browsers umumnya memiliki batasan panjang URL, dan server juga dapat membatasi ukuran URL yang diterimanya. Oleh karena itu, metode GET sebaiknya digunakan untuk data yang relatif kecil. 
+- Bookmarking dan Kepala Riwayat: Karena data dikirimkan dalam tubuh permintaan HTTP, metode POST tidak memungkinkan bookmarking atau penambahan ke dalam riwayat browser secara langsung. Anda tidak dapat dengan mudah menambahkan tautan ke hasil pencarian atau formulir POST ke bookmark. Kemudian untuk GET, Karena data dikirimkan melalui URL, metode GET memungkinkan bookmarking dan penambahan ke dalam riwayat browser. Ini membuatnya cocok untuk pencarian dan tautan ke halaman yang ingin Anda bagikan atau bookmark. 
+- Keamanan: Karena data tidak terlihat dalam URL, form POST cenderung lebih aman untuk mengirim data sensitif. Namun, Anda masih perlu melindungi form POST dari serangan CSRF (Cross-Site Request Forgery) dengan menggunakan mekanisme perlindungan yang disediakan oleh Django. Sedangkan Data dalam form GET terlihat dalam URL dan dapat dengan mudah disadap. Ini membuatnya kurang aman untuk data sensitif. Selain itu, data dalam form GET juga dapat muncul dalam log server atau log akses web, yang bisa menjadi masalah keamanan. 
+2. XML (Extensible Markup Language), JSON (JavaScript Object Notation), dan HTML (Hypertext Markup Language) adalah tiga format yang umum digunakan untuk mengirim data di berbagai konteks. Berikut adalah perbedaan utama antara ketiganya dalam konteks pengiriman data: 
+- Struktur Data: XML adalah bahasa markup yang sangat fleksibel yang digunakan untuk mewakili data dalam format hierarki berbasis teks. Data dalam XML dijelaskan menggunakan tag-tag yang dapat disesuaikan, sehingga XML lebih cocok untuk mewakili data yang kompleks dan bervariasi. JSON adalah format data ringkas yang berbasis teks dan digunakan untuk mewakili objek dan array. Ini memiliki struktur data yang lebih sederhana daripada XML dan sangat cocok untuk data yang memiliki struktur yang lebih sederhana, seperti objek dan daftar atribut-nilai. HTML adalah bahasa markup yang digunakan untuk membuat konten web. Ini memiliki struktur yang lebih terbatas dibandingkan dengan XML atau JSON, karena tujuannya adalah untuk menggambarkan tampilan halaman web, bukan data mentah. 
+- Ketelitian Pada Tipe Data: XML mendukung tipe data yang lebih kaya dan dapat mendefinisikan tipe data khusus melalui Document Type Definition (DTD) atau XML Schema. Ini membuatnya lebih kuat dalam hal validasi data. JSON memiliki tipe data yang lebih terbatas dibandingkan dengan XML. Ini hanya mendukung tipe data dasar seperti string, angka, boolean, objek, dan array. Namun, ini membuat JSON lebih mudah digunakan dan lebih ringkas untuk data sederhana. HTML tidak fokus pada tipe data dalam konteks pengiriman data. Tujuannya adalah untuk menggambarkan struktur dan tampilan konten web. 
+- Bacaan dan Penulisan: XML sering kali memerlukan lebih banyak karakter untuk menggambarkan data yang sama dibandingkan dengan JSON. Ini membuat XML cenderung lebih besar dan lebih lambat dalam pengiriman dan pemrosesan data. JSON memiliki format yang lebih ringkas, sehingga memerlukan lebih sedikit karakter untuk menggambarkan data. Ini membuatnya lebih efisien dalam hal pengiriman dan pemrosesan data. HTML juga memiliki format yang cukup ringkas, tetapi tujuannya adalah untuk menampilkan konten web, bukan mengirimkan data mentah. 
+- Kompatibilitas dengan Bahasa: XML mendukung banyak bahasa pemrograman dan memiliki dukungan yang luas dalam berbagai platform. Kemudian JSON berasal dari JavaScript dan secara alami kompatibel dengan JavaScript, tetapi juga memiliki dukungan yang baik di banyak bahasa pemrograman lainnya. Lalu HTML adalah bahasa markup khusus untuk web, dan banyak bahasa pemrograman memiliki dukungan untuk memanipulasi dan mengurai HTML.
+3. JSON (JavaScript Object Notation) sering digunakan dalam pertukaran data antara aplikasi web modern karena memiliki beberapa keunggulan yang membuatnya format yang populer dan efisien, berikut alasan-alasannya : 
+- Ringkas: JSON adalah format yang ringkas, artinya data dapat direpresentasikan dengan jumlah karakter yang lebih sedikit dibandingkan dengan format lain seperti XML. Ini membuatnya lebih efisien dalam hal penggunaan bandwidth dan transfer data melalui jaringan. 
+- Mudah Dibaca dan Ditulis: JSON menggunakan struktur objek dan daftar yang sangat mirip dengan format data dalam banyak bahasa pemrograman. Ini membuatnya mudah dibaca dan ditulis oleh manusia dan aplikasi. Bahkan, JSON berasal dari JavaScript, sehingga kompatibel secara alami dengan banyak bahasa pemrograman, termasuk JavaScript, Python, Java, dan banyak lainnya. 
+- Partial Parsing: JSON memungkinkan parsing parsial, yang berarti Anda dapat dengan mudah mengakses bagian tertentu dari data tanpa harus mengurai seluruh dokumen. Ini sangat berguna dalam aplikasi web modern yang sering kali membutuhkan pertukaran data dalam format yang dapat diambil secara dinamis saat dibutuhkan. 
+- Kompatibilitas Cross-Platform: JSON dapat digunakan secara lintas platform dan bahasa pemrograman. Ini memungkinkan berbagai sistem dan aplikasi yang berbeda untuk berkomunikasi dengan mudah dan saling berinteraksi. 
+- Penggunaan dalam JavaScript: JSON secara alami cocok dengan JavaScript karena formatnya sangat mirip dengan objek JavaScript. Oleh karena itu, JSON sangat umum digunakan dalam pengiriman data antara server dan klien web (browser) yang berbasis JavaScript. 
+- Keamanan: JSON lebih aman daripada format data yang lebih kompleks seperti XML, karena tidak memiliki fitur-fitur seperti dukungan untuk dokumen DTD (Document Type Definition) yang bisa dimanfaatkan oleh penyerang untuk serangan seperti XML External Entity (XXE) injection. 
+- Kemudahan Debugging: JSON memiliki format yang jelas dan mudah dibaca oleh manusia, yang memudahkan debugging dan pemecahan masalah dalam pertukaran data. 
+Karena keunggulan-keunggulannya ini, JSON telah menjadi format data yang sangat populer dalam pengembangan aplikasi web modern, terutama dalam komunikasi antara aplikasi klien dan server. Namun, penting untuk diingat bahwa pemilihan format data juga harus mempertimbangkan kebutuhan dan karakteristik khusus dari aplikasi Anda.
+4. Berikut merupakan tahapan yang saya lakukan untuk membuat tugas 3
+Panduan Mengatur Routing dari main/ ke / 
+- Ubah routing dari main/ menjadi / pada berkas urls.py. 
+- Jalankan virtual environment terlebih dahulu. 
+- Buka urls.py dan ubah path sesuai dengan perubahan routing. 
+- Jalankan server dengan python manage.py runserver dan buka http://localhost:8000/ di browser. 
+- Implementasi Skeleton sebagai Kerangka Views : Buat folder templates dan buat berkas base.html sebagai template dasar. 
+- Isi base.html dengan kode template dasar. 
+- Sesuaikan konfigurasi settings.py agar berkas base.html terdeteksi sebagai template. 
+- Ubah berkas main.html untuk menggunakan base.html sebagai template utama. 
+- Membuat Form Input Data dan Menampilkan Data Produk Pada HTML : Buat berkas forms.py untuk membuat form input data produk. 
+- Buat fungsi create_product untuk menangani form input data produk. 
+- Ubah fungsi show_main untuk menampilkan data produk. 
+- Tambahkan URL path untuk create_product. 
+- Buat berkas create_product.html untuk tampilan form input produk. Mengembalikan Data dalam Bentuk XML dan JSON : Buat fungsi show_xml dan show_json untuk mengembalikan data dalam format XML dan JSON. 
+- Tambahkan URL path untuk show_xml dan show_json. 
+- Mengembalikan Data Berdasarkan ID dalam Bentuk XML dan JSON : Buat fungsi show_xml_by_id dan show_json_by_id untuk mengembalikan data produk berdasarkan ID dalam format XML dan JSON. 
+- Tambahkan URL path untuk show_xml_by_id dan show_json_by_id. 
+- Penggunaan Postman Sebagai Data Viewer Pastikan server berjalan (python manage.py runserver). : Buka Postman dan buat request GET dengan URL sesuai kebutuhan (XML atau JSON). 
+- Klik tombol Send untuk mengirimkan request. 
+- Lihat hasil response dari request pada Postman. 
+
+![Alt text](HTML.png)
+![Alt text](XML.png)
+![Alt text](JSON.png)
+![Alt text](<XML By ID.png>)
+![Alt text](<JSON by ID.png>)
+
+
+

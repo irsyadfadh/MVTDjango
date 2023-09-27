@@ -22,8 +22,8 @@
         {% for item in items %}
             <tr>
                 <td>{{item.name}}</td>
-                <td>{{item.price}}</td>
-                <td>{{item.description}}</td>
+                <td>{{item.angkatan}}</td>
+                <td>{{item.jurusan}}</td>
                 <td>{{item.date_added}}</td>
             </tr>
         {% endfor %}
@@ -34,6 +34,14 @@
     <a href="{% url 'main:create_product' %}">
         <button>
             Add New Product
+        </button>
+    </a>
+    
+    <h5>Sesi terakhir login: {{ last_login }}</h5>
+
+    <a href="{% url 'main:logout' %}">
+        <button>
+            Logout
         </button>
     </a>
     

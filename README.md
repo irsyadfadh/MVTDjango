@@ -81,7 +81,7 @@ Panduan Mengatur Routing dari main/ ke /
 ![Alt text](<XML By ID.png>)
 ![Alt text](<JSON by ID.png>)
 
-TUGAS 4 PBP 
+TUGAS 4 PBP :
 
 1. Django UserCreationForm adalah sebuah formulir yang disediakan oleh Django, sebuah framework web Python yang populer, untuk memudahkan proses pembuatan akun pengguna (user) dalam aplikasi web. Formulir ini dirancang khusus untuk mengumpulkan informasi yang diperlukan untuk membuat akun pengguna baru, seperti nama pengguna (username), kata sandi (password), dan konfirmasi kata sandi (password confirmation). UserCreationForm adalah bagian dari modul django.contrib.auth.forms dan dapat digunakan dengan mudah dalam pengembangan aplikasi web Django yang melibatkan otentikasi pengguna.
 

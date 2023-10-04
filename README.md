@@ -205,47 +205,47 @@ TUGAS 5 PBP :
 
 2. HTML5 (Hypertext Markup Language 5) merupakan versi terbaru dari bahasa markup yang digunakan untuk membuat Website. HTML5 memiliki berbagai tag (elemen) yang digunakan untuk membangun struktur dan konten halaman web. Di bawah ini adalah beberapa tag HTML5 yang umum digunakan:
 
-- <html>: Tag ini digunakan untuk mengawali dokumen HTML. Semua elemen HTML ditempatkan di dalamnya.
+- <"html"> : Tag ini digunakan untuk mengawali dokumen HTML. Semua elemen HTML ditempatkan di dalamnya.
 
-- <head>: Elemen ini berisi informasi tentang dokumen HTML, seperti judul halaman, meta-informasi, dan tautan ke stylesheet dan skrip JavaScript.
+- <"head"> : Elemen ini berisi informasi tentang dokumen HTML, seperti judul halaman, meta-informasi, dan tautan ke stylesheet dan skrip JavaScript.
 
-- <title>: Digunakan untuk menentukan judul halaman yang akan ditampilkan di bilah judul browser.
+- <"title"> : Digunakan untuk menentukan judul halaman yang akan ditampilkan di bilah judul browser.
 
-- <meta>: Elemen ini digunakan untuk menyisipkan meta-informasi ke dalam halaman web, seperti karakter encoding, deskripsi, dan instruksi pengindeksan.
+- <"meta"> : Elemen ini digunakan untuk menyisipkan meta-informasi ke dalam halaman web, seperti karakter encoding, deskripsi, dan instruksi pengindeksan.
 
-- <link>: Digunakan untuk menghubungkan halaman web dengan stylesheet eksternal atau sumber daya lainnya.
+- <"link"> : Digunakan untuk menghubungkan halaman web dengan stylesheet eksternal atau sumber daya lainnya.
 
-- <style>: Elemen ini digunakan untuk mendefinisikan gaya (CSS) secara internal di dalam dokumen HTML.
+- <"style"> : Elemen ini digunakan untuk mendefinisikan gaya (CSS) secara internal di dalam dokumen HTML.
 
-- <script>: Elemen ini digunakan untuk menyisipkan kode JavaScript ke dalam halaman web.
+- <"script">: Elemen ini digunakan untuk menyisipkan kode JavaScript ke dalam halaman web.
 
-- <body>: Bagian utama dari halaman web yang berisi konten yang akan ditampilkan kepada pengguna.
+- <"body">: Bagian utama dari halaman web yang berisi konten yang akan ditampilkan kepada pengguna.
 
-- <header>: Digunakan untuk mendefinisikan bagian kepala halaman, yang sering berisi logo, judul, dan elemen-elemen terkait lainnya.
+- <"header">: Digunakan untuk mendefinisikan bagian kepala halaman, yang sering berisi logo, judul, dan elemen-elemen terkait lainnya.
 
-- <nav>: Elemen ini digunakan untuk mendefinisikan bagian navigasi, seperti menu situs web.
+- <"nav">: Elemen ini digunakan untuk mendefinisikan bagian navigasi, seperti menu situs web.
 
-- <main>: Menandakan konten utama dari halaman web, dan hanya boleh digunakan satu kali dalam satu halaman.
+- <"main"> : Menandakan konten utama dari halaman web, dan hanya boleh digunakan satu kali dalam satu halaman.
 
-- <section>: Digunakan untuk membagi halaman web menjadi bagian-bagian yang berbeda dengan tujuan khusus.
+- <"section"> : Digunakan untuk membagi halaman web menjadi bagian-bagian yang berbeda dengan tujuan khusus.
 
-- <article>: Elemen ini digunakan untuk menandakan konten independen, seperti berita, blog post, atau artikel.
+- <"article"> : Elemen ini digunakan untuk menandakan konten independen, seperti berita, blog post, atau artikel.
 
-- <aside>: Digunakan untuk menandakan konten yang berhubungan dengan konten utama, tetapi tidak terlalu penting, seperti sidebar.
+- <"aside"> : Digunakan untuk menandakan konten yang berhubungan dengan konten utama, tetapi tidak terlalu penting, seperti sidebar.
 
-- <footer>: Bagian bawah dari halaman web yang sering berisi informasi tambahan, tautan, atau hak cipta.
+- <"footer"> : Bagian bawah dari halaman web yang sering berisi informasi tambahan, tautan, atau hak cipta.
 
-- <p>: Digunakan untuk menandai paragraf teks.
+- <"p">: Digunakan untuk menandai paragraf teks.
 
-- <a>: Elemen ini digunakan untuk membuat tautan (link) ke halaman web lain atau sumber daya.
+- <"a">: Elemen ini digunakan untuk membuat tautan (link) ke halaman web lain atau sumber daya.
 
-- <img>: Digunakan untuk menyisipkan gambar ke dalam halaman web.
+- <"img">: Digunakan untuk menyisipkan gambar ke dalam halaman web.
 
-- <ul>, <ol>, dan <li>: Elemen ini digunakan untuk membuat daftar tak terurut (unordered list) dan daftar terurut (ordered list) dengan item-list (<li>).
+- <"ul">, <"ol">, dan <"li">: Elemen ini digunakan untuk membuat daftar tak terurut (unordered list) dan daftar terurut (ordered list) dengan item-list (<"li">).
 
-- <table>, <tr>, <td>, dan <th>: Elemen ini digunakan untuk membuat tabel dan mengatur data dalam sel-sel tabel.
+- <"table">, <"tr">, <"td">, dan <"th">: Elemen ini digunakan untuk membuat tabel dan mengatur data dalam sel-sel tabel.
 
-- <form>, <input>, dan <button>: Digunakan untuk membuat formulir yang memungkinkan pengguna untuk mengirimkan data ke server
+- <"form">, <"input">, dan <"button">: Digunakan untuk membuat formulir yang memungkinkan pengguna untuk mengirimkan data ke server
 
 3. Margin dan padding adalah dua properti dalam CSS yang digunakan untuk mengatur tata letak elemen-elemen dalam halaman web. Mereka memiliki perbedaan yang penting dalam cara mereka memengaruhi tata letak elemen dan interaksi dengan elemen-elemen lain di sekitarnya:
 Margin:

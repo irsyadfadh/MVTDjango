@@ -194,3 +194,133 @@ dan masih banyak cara-cara lain untuk mengantisipasi risiko potensial.
 - Ubah fungsi show_main untuk hanya menampilkan produk yang dimiliki oleh pengguna yang sedang login.
 - Buat migrasi model dan terapkan migrasi.
 - Jalankan proyek Django dan coba membuat akun baru, login, dan lihat bagaimana produk hanya ditampilkan untuk pengguna yang membuatnya
+
+TUGAS 5 PBP :
+
+1. Element selector adalah salah satu jenis selektor dalam CSS yang digunakan untuk menggambarkan tampilan dan gaya elemen HTML berdasarkan jenis elemennya. Setiap elemen HTML memiliki nama khusus, seperti <p>, <h1>, <div>, dan lain sebagainya. Di bawah ini, saya akan menjelaskan manfaat dari beberapa jenis selektor elemen dan kapan waktu yang tepat untuk menggunakannya:
+- Type Selector (Element Selector) . Manfaatnya yaitu Selector elemen memungkinkan Anda menggambarkan tampilan dan gaya khusus untuk jenis elemen tertentu, seperti <p>, <h1>, atau <div>. Ini membantu dalam memastikan konsistensi tampilan elemen di seluruh halaman. Kapan Menggunakannya yaitu Digunakan ketika Anda ingin menggambarkan tampilan khusus untuk satu atau beberapa jenis elemen dalam dokumen.
+- ID Selector (#id). Manfaat ID selector memungkinkan Anda menentukan gaya yang unik untuk elemen dengan atribut ID tertentu. Ini berguna ketika Anda memiliki elemen dengan ID unik yang perlu diubah tampilannya. Kapan Menggunakannya yaitu Idealnya, digunakan ketika Anda memiliki elemen dengan atribut ID yang unik dalam halaman web Anda.
+- Class Selector (.class). Manfaat Class selector memungkinkan Anda menggambarkan tampilan yang sama atau serupa untuk beberapa elemen dengan atribut class yang sama. Ini memungkinkan Anda untuk menerapkan gaya yang konsisten pada elemen-elemen yang berbagi atribut class yang sama. Kapan Menggunakannya yaitu Cocok digunakan ketika Anda memiliki beberapa elemen yang ingin Anda gayakan dengan cara yang serupa, tetapi mungkin ada elemen lain dengan gaya yang berbeda.
+- Universal Selector (*). Manfaat Universal selector memungkinkan Anda memengaruhi semua elemen dalam halaman web, baik elemen-elemen yang ada maupun yang akan ditambahkan di masa depan. Ini dapat digunakan untuk mengatur properti dasar seperti padding dan margin secara konsisten di seluruh halaman. Kapan Menggunakannya yaitu Gunakan dengan hati-hati karena dapat berpengaruh besar pada kinerja. Sebaiknya digunakan secara terbatas, seperti untuk mengatur nilai dasar font atau margin.
+2. HTML5 (Hypertext Markup Language 5) merupakan versi terbaru dari bahasa markup yang digunakan untuk membuat Website. HTML5 memiliki berbagai tag (elemen) yang digunakan untuk membangun struktur dan konten halaman web. Di bawah ini adalah beberapa tag HTML5 yang umum digunakan:
+
+- <html>: Tag ini digunakan untuk mengawali dokumen HTML. Semua elemen HTML ditempatkan di dalamnya.
+
+- <head>: Elemen ini berisi informasi tentang dokumen HTML, seperti judul halaman, meta-informasi, dan tautan ke stylesheet dan skrip JavaScript.
+
+- <title>: Digunakan untuk menentukan judul halaman yang akan ditampilkan di bilah judul browser.
+
+- <meta>: Elemen ini digunakan untuk menyisipkan meta-informasi ke dalam halaman web, seperti karakter encoding, deskripsi, dan instruksi pengindeksan.
+
+- <link>: Digunakan untuk menghubungkan halaman web dengan stylesheet eksternal atau sumber daya lainnya.
+
+- <style>: Elemen ini digunakan untuk mendefinisikan gaya (CSS) secara internal di dalam dokumen HTML.
+
+- <script>: Elemen ini digunakan untuk menyisipkan kode JavaScript ke dalam halaman web.
+
+- <body>: Bagian utama dari halaman web yang berisi konten yang akan ditampilkan kepada pengguna.
+
+- <header>: Digunakan untuk mendefinisikan bagian kepala halaman, yang sering berisi logo, judul, dan elemen-elemen terkait lainnya.
+
+- <nav>: Elemen ini digunakan untuk mendefinisikan bagian navigasi, seperti menu situs web.
+
+- <main>: Menandakan konten utama dari halaman web, dan hanya boleh digunakan satu kali dalam satu halaman.
+
+- <section>: Digunakan untuk membagi halaman web menjadi bagian-bagian yang berbeda dengan tujuan khusus.
+
+- <article>: Elemen ini digunakan untuk menandakan konten independen, seperti berita, blog post, atau artikel.
+
+- <aside>: Digunakan untuk menandakan konten yang berhubungan dengan konten utama, tetapi tidak terlalu penting, seperti sidebar.
+
+- <footer>: Bagian bawah dari halaman web yang sering berisi informasi tambahan, tautan, atau hak cipta.
+
+- <p>: Digunakan untuk menandai paragraf teks.
+
+- <a>: Elemen ini digunakan untuk membuat tautan (link) ke halaman web lain atau sumber daya.
+
+- <img>: Digunakan untuk menyisipkan gambar ke dalam halaman web.
+
+- <ul>, <ol>, dan <li>: Elemen ini digunakan untuk membuat daftar tak terurut (unordered list) dan daftar terurut (ordered list) dengan item-list (<li>).
+
+- <table>, <tr>, <td>, dan <th>: Elemen ini digunakan untuk membuat tabel dan mengatur data dalam sel-sel tabel.
+
+- <form>, <input>, dan <button>: Digunakan untuk membuat formulir yang memungkinkan pengguna untuk mengirimkan data ke server
+
+3. Margin dan padding adalah dua properti dalam CSS yang digunakan untuk mengatur tata letak elemen-elemen dalam halaman web. Mereka memiliki perbedaan yang penting dalam cara mereka memengaruhi tata letak elemen dan interaksi dengan elemen-elemen lain di sekitarnya:
+Margin:
+- Margin adalah ruang luar elemen: Margin adalah jarak antara batas luar elemen (border elemen) dan elemen-elemen lain di sekitarnya.
+- Mengatur margin memengaruhi jarak antara elemen dengan elemen lain: Mengatur margin akan mempengaruhi seberapa jauh elemen tersebut dari elemen-elemen lain di sekitarnya.
+- Margin tidak berwarna atau transparan: Margin tidak memiliki warna atau latar belakang dan biasanya digunakan untuk mengatur jarak antara elemen-elemen.
+
+Padding:
+- Padding adalah ruang dalam elemen: Padding adalah jarak antara batas dalam elemen (border elemen) dan konten yang ada di dalam elemen tersebut.
+- Mengatur padding memengaruhi ruang di dalam elemen: Mengatur padding akan mempengaruhi seberapa jauh konten dalam elemen tersebut dari batas dalam elemen.
+- Padding dapat memiliki warna atau latar belakang: Anda dapat memberi warna atau latar belakang pada padding, sehingga akan mempengaruhi tampilan elemen dan area di dalamnya. 
+
+4. Tailwind CSS dan Bootstrap adalah dua framework CSS yang populer digunakan untuk membangun tampilan web. Mereka memiliki pendekatan dan karakteristik yang berbeda, dan pemilihan antara keduanya tergantung pada kebutuhan proyek dan preferensi pengembang. Berikut perbedaan utama antara keduanya dan kapan sebaiknya menggunakan satu daripada yang lain:
+
+Tailwind CSS:
+
+- Utility-First Approach: Tailwind CSS mengikuti pendekatan "utility-first," yang berarti framework ini memberikan banyak kelas utilitas yang dapat digunakan untuk langsung mengatur tampilan elemen-elemen HTML. Anda mengkombinasikan kelas-kelas ini untuk membuat tampilan yang sesuai dengan kebutuhan.
+
+- Customizable: Tailwind sangat dapat disesuaikan. Anda dapat mengonfigurasi desain, mengubah warna, ukuran, dan bahkan menambahkan kelas utilitas kustom sesuai kebutuhan proyek.
+
+- Minimal Styling: Tailwind tidak memiliki banyak gaya bawaan. Ini memungkinkan Anda untuk memiliki lebih sedikit kode CSS yang tidak terpakai, yang berarti proyek Anda mungkin lebih ringan.
+
+- Kontrol yang Lebih Besar: Anda memiliki kontrol yang lebih besar atas tampilan elemen-elemen Anda, tetapi juga memerlukan lebih banyak kerja dan pemikiran dalam menggabungkan kelas-kelas utilitas.
+
+Kapan sebaiknya menggunakan Tailwind CSS:
+
+- Ketika Anda ingin kontrol yang sangat detail atas tampilan elemen-elemen Anda.
+- Jika Anda ingin menghindari penggunaan gaya bawaan yang berlebihan dan mengurangi pemborosan.
+- Jika Anda suka pendekatan "utility-first" dan senang bekerja dengan kelas-kelas utilitas.
+
+Bootstrap:
+
+- Component-Based: Bootstrap adalah framework CSS berbasis komponen, yang berarti itu menyediakan komponen-komponen yang telah dirancang sebelumnya seperti navigasi, formulir, jumbotron, dll. Anda hanya perlu menerapkan kelas-kelas Bootstrap untuk menggunakan komponen-komponen ini.
+
+- Rapid Development: Dengan Bootstrap, Anda dapat membangun tampilan web dengan cepat karena komponen-komponennya telah dirancang dan terbukti digunakan dalam banyak proyek.
+
+- Consistency: Bootstrap memberikan konsistensi tampilan dan pengalaman pengguna di seluruh proyek karena menggunakan gaya baku.
+
+- Kustomisasi yang Dibatasi: Sementara Bootstrap dapat disesuaikan, dalam beberapa kasus, mengubah tampilan komponen atau gaya bawaannya bisa sulit dan memerlukan penyesuaian yang lebih besar.
+
+Kapan sebaiknya menggunakan Bootstrap:
+
+- Ketika Anda perlu membangun situs web dengan cepat dan Anda menghargai komponen-komponen yang telah dirancang sebelumnya.
+- Jika Anda ingin memastikan konsistensi dalam tampilan dan pengalaman pengguna di seluruh proyek Anda.
+- Jika Anda tidak ingin menghabiskan banyak waktu untuk menyesuaikan tampilan.
+
+Pilihan antara Tailwind CSS dan Bootstrap tergantung pada prioritas dan kebutuhan proyek Anda. Jika Anda mengutamakan kontrol yang lebih besar dan siap bekerja dengan pendekatan "utility-first," maka Tailwind bisa menjadi pilihan yang baik. Di sisi lain, jika Anda ingin membangun proyek dengan cepat dan menghargai komponen-komponen yang telah dirancang sebelumnya, Bootstrap bisa menjadi pilihan yang lebih sesuai.
+
+5. Berikut inti bagaimana cara saya mengimplementasikan checklist di atas secara step-by-step :
+berikut tahapan berurut:
+
+**Menambahkan Bootstrap ke Aplikasi:**
+
+    1. Buka file `base.html` dalam folder `templates` pada proyek Django.
+    2. Tambahkan tag `<meta name="viewport">` di dalam bagian `<head>` untuk pengaturan tampilan perangkat mobile.
+    3. Tambahkan tautan ke CSS Bootstrap ke dalam `<head>` untuk mengimpor Bootstrap CSS.
+    4. Tambahkan tautan ke jQuery dan Bootstrap JavaScript ke dalam `<head>`.
+    5. (Opsional) Tambahkan tautan ke Popper.js jika Anda ingin menggunakan fitur-fitur seperti dropdowns, popover, dan tooltips.
+
+**Menambahkan Navbar pada Aplikasi:**
+
+    1. Tambahkan navigasi bar, termasuk nama Anda dan tombol logout, ke dalam halaman `main.html`.
+    2. Anda dapat menggunakan Bootstrap untuk membantu dalam membuat navigasi bar ini.
+
+**Menambahkan Fitur Edit pada Aplikasi:**
+
+    1. Buka `views.py` di subdirektori `main` dan buat fungsi `edit_product` yang menerima permintaan dan ID produk.
+    2. Dalam fungsi `edit_product`, ambil produk berdasarkan ID, set produk sebagai instance dari formulir, dan simpan perubahan jika formulir valid.
+    3. Buat berkas HTML baru dengan nama `edit_product.html` dan isi dengan formulir untuk mengedit produk.
+    4. Tambahkan URL path untuk mengakses fungsi `edit_product` di `urls.py`.
+    5. Tambahkan tombol "Edit" pada setiap baris produk di `main.html` yang mengarah ke halaman pengeditan.
+
+**Membuat Fungsi untuk Menghapus Data Produk:**
+
+    1. Buat fungsi `delete_product` dalam `views.py` di folder `main` untuk menghapus data produk berdasarkan ID.
+    2. Tambahkan URL path untuk mengakses fungsi `delete_product` di `urls.py`.
+    3. Tambahkan tombol "Delete" pada setiap baris produk di `main.html` yang mengarah ke fungsi penghapusan.
+
+Step terakhir saya mengubah sebaik mungkin yaitu kustomisasi HTML agar terlihat menarik.

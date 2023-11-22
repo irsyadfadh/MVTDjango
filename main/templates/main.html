@@ -28,16 +28,16 @@
                     <form id="form" onsubmit="return false;">
                         {% csrf_token %}
                         <div class="mb-3">
-                            <label for="name" class="col-form-label">Name:</label>
+                            <label for="name" class="col-form-label">Nama:</label>
                             <input type="text" class="form-control" id="name" name="name"></input>
                         </div>
                         <div class="mb-3">
-                            <label for="price" class="col-form-label">Price:</label>
-                            <input type="number" class="form-control" id="price" name="price"></input>
+                            <label for="angkatan" class="col-form-label">Angkatan:</label>
+                            <input type="number" class="form-control" id="angkatan" name="angkatan"></input>
                         </div>
                         <div class="mb-3">
-                            <label for="description" class="col-form-label">Description:</label>
-                            <textarea class="form-control" id="description" name="description"></textarea>
+                            <label for="jurusan" class="col-form-label">Jurusan:</label>
+                            <textarea class="form-control" id="jurusan" name="jurusan"></textarea>
                         </div>
                     </form>
                 </div>
@@ -58,37 +58,6 @@
         <h5>Class:</h5>
         <p>{{class}}</p>
 
-        <!-- Tambahkan desain yang menarik pada bagian ini -->
-
-        {% comment %} <table class="table table-bordered table-striped mt-4">
-            <thead class="bg-info text-white">
-                <tr>
-                    <th>Name</th>
-                    <th>Angkatan</th>
-                    <th>Jurusan</th>
-                    <th>Date Added</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for item in items %}
-                    <tr>
-                        <td>{{item.name}}</td>
-                        <td>{{item.angkatan}}</td>
-                        <td>{{item.jurusan}}</td>
-                        <td>{{item.date_added}}</td>
-                        <td>
-                            <a href="{% url 'main:edit_product' item.pk %}" class="btn btn-warning btn-sm">
-                                Edit
-                            </a>
-                            <a href="{% url 'main:delete_product' item.pk %}" class="btn btn-danger btn-sm">
-                                Delete
-                            </a>
-                        </td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table> {% endcomment %}
         <table id="product_table"></table>
         <script>
             async function getProducts() {
